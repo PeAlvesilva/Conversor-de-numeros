@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="num-conv_style.css">
+    <title>Conversor de Números</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Números</h1>
+        <label for="number">Digite o número:</label>
+        <input type="text" id="number" placeholder="Ex: 42, 1010, 2A" style="width: 330px;">
+        <label for="base">Base de entrada:</label>
+        <select id="base">
+            <option value="10">Decimal</option>
+            <option value="2">Binário</option>
+            <option value="16">Hexadecimal</option>
+            <option value="8">Octal</option>
+        </select>
+        <button onclick="convert()">Converter</button>
+        <div id="results"></div>
+    </div>
+
+    <script src="num-conv_script.js"></script>
+
+</body>
+</html>
