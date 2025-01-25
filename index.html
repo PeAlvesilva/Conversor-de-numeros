@@ -5,23 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="num-conv_style.css">
     <link rel="icon" href="square-binary-solid.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Conversor de Números</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Conversor de Números</h1>
-        <label for="number">Digite o número:</label>
-        <input type="text" id="number" placeholder="Ex: 42, 1010, 2A" style="width: 330px;">
-        <label for="base">Base de entrada:</label>
-        <select id="base">
-            <option value="10">Decimal</option>
-            <option value="2">Binário</option>
-            <option value="16">Hexadecimal</option>
-            <option value="8">Octal</option>
-        </select>
-        <button onclick="convert()">Converter</button>
-        <div id="results"></div>
+    
+    <h1 id="title-display-1">Conversor de Números</h1>
+
+    <div id="container-area">
+
+        <div id="results1">
+            <p style="font-weight: bold;">Resultado:</p>
+        </div>
+    
+        <div class="container">
+
+            <h1 id="title-display-2">Conversor de Números</h1>
+
+            <div id="results2">
+                <p style="font-weight: bold;">Resultado:</p>
+            </div>
+
+            <div id="container-content">
+
+                <label for="number">Digite o número:</label>
+                <input type="text" id="number" placeholder="Ex: 42, 1010, 2A" style="width: 330px;">
+                <label for="base">Base de entrada:</label>
+                <select id="base">
+                   <option value="10">Decimal</option>
+                   <option value="2">Binário</option>
+                   <option value="16">Hexadecimal</option>
+                   <option value="8">Octal</option>
+                </select>
+                <button onclick="convert()">Converter</button>
+
+            </div>
+            
+        </div>
+
     </div>
 
     <script src="num-conv_script.js"></script>

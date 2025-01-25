@@ -5,9 +5,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     background: #f0f0f0;
 }
+
+#container-area {
+    width: 750px;
+    padding: 25px;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+
 .container {
     background: #fff;
     padding: 20px;
@@ -15,16 +25,23 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 350px;
+    display: flex;
+    flex-direction: column;
 }
-h1 {
-    margin-bottom: 20px;
-    color: #333;
+
+#title-display-1 {
+    color: #000000;
 }
+
+#title-display-2 {
+    color: #202020;
+}
+
 input, select, button {
     margin: 10px 0;
     padding: 10px;
     width: 100%;
-    border: 1px solid #ddd;
+    border: 1px solid #b9b9b9;
     border-radius: 5px;
 }
 button {
@@ -35,4 +52,38 @@ button {
 }
 button:hover {
     background-color: #0056b3;
+}
+
+#results1 {
+    width: 200px;
+    padding: 60px;
+    height: 280px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    background-color: whitesmoke;
+    margin: 20px auto;
+    border: 1px solid;
+    font-size: 105%;
+    word-wrap: break-word;
+}
+
+#results2 {
+    width: 200px;
+    padding: 30px 60px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    background-color: whitesmoke;
+    margin: 20px auto;
+    border: 1px solid;
+    word-wrap: break-word;
+}
+
+#container-content {
+    height: 210px;
+    margin: 20px auto;
+    justify-content: center;
 }
